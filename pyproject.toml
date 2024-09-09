@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "geargrind"
+version = "0.1.0"
+description = ""
+authors = ["Lars Viklund <zao@zao.se>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+clipboard-monitor = "^1.0.5"
+pywin32 = "^306"
+
+[tool.poetry.scripts]
+ggmon = "geargrind.ggmon:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
